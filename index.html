@@ -13,7 +13,11 @@
  <body>
  </body>
      <script type="text/javascript">
-const linkArr = [
+function randomRedirect() {
+    let target = linkArr[Math.floor(Math.random() * linkArr.length)]
+    window.location.href = target  
+}
+      const linkArr = [
     'http://www.baidu.com',
     'http://www.microsoft.com',
     'http://www.google.com',
@@ -21,9 +25,6 @@ const linkArr = [
     'http://www.qq.com'
 ]
  
-function randomRedirect() {
-    let target = linkArr[Math.floor(Math.random() * linkArr.length)]
-    window.location.href = target  
-}
+
      </script>
  </html>
